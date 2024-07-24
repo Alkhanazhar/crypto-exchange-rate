@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: rgb(7, 1, 108);
+  background: linear-gradient(
+    180deg,
+    rgba(7, 1, 108, 1) 0%,
+    rgb(2, 2, 92) 35%,
+    rgb(44, 43, 95) 100%
+  );
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+button {
+  color: white;
+}

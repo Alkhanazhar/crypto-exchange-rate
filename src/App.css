@@ -1,0 +1,116 @@
+.navbar {
+  @apply flex items-center justify-between py-5 px-[10%] border-b border-b-[#3c3c3c];
+}
+.navbar-right {
+  @apply flex gap-8;
+}
+.navbar select {
+  @apply p-2 rounded-md border-2 bg-transparent text-white;
+}
+
+.navbar option {
+  @apply bg-[#09005c] text-white;
+}
+.navbar button {
+  @apply flex items-center gap-2 py-2 px-4 text-[md] text-[#393939] bg-white border-none cursor-pointer;
+}
+
+/* home */
+
+.home {
+  @apply text-white px-2 pb-24 text-center;
+}
+.hero {
+  @apply max-w-[700px] mx-auto my-20 flex flex-col items-center justify-center gap-8;
+}
+.hero h1 {
+  font-size: max(5vw, 36px);
+}
+.hero p {
+  @apply w-[70%] text-[#e3e3e3] leading-[1.7];
+}
+.hero form {
+  @apply p-2 w-[80%] bg-white flex items-center justify-between gap-2 rounded-sm shadow-lg;
+}
+.hero input {
+  @apply flex-1 text-base outline-none border-none pl-2;
+}
+.hero button {
+  @apply border-none bg-[#7927ff] text-white text-base py-2 px-4 rounded-md cursor-pointer;
+}
+.crypto-table {
+  @apply max-w-[800px] mx-auto rounded-sm;
+}
+.table-layout {
+  @apply grid grid-cols-12 py-4 px-4 items-center border-b border-b-[#5857576e] rounded-md shadow-md;
+  background: linear-gradient(#24060621, #0000004d);
+}
+.table-layout:last-child {
+  border: none;
+  background: linear-gradient(#00000021, #0000003d);
+}
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 8%;
+  }
+  .navbar button {
+    gap: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+/* coin page */
+.coin {
+  @apply px-5;
+}
+.coin-name {
+  @apply flex flex-col items-center gap-5 my-20 mx-auto mb-10;
+}
+.coin-name img {
+  max-width: 100px;
+}
+.coin-chart {
+  max-width: 600px;
+  margin: auto;
+  height: 250px;
+}
+.coin-info {
+  max-width: 600px;
+  margin: 50px auto;
+  @apply flex items-center flex-col;
+}
+.coin-info ul {
+  @apply flex justify-between py-2 border-b-[#acacac] border-b leading-none gap-5;
+}
+.coin-info ul li:last-child {
+  font-weight: 300;
+}
+.coin-info ul li:first-child {
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+  .navbar button {
+    gap: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .hero input {
+    width: 100px;
+  }
+  .table-layout {
+    @apply grid grid-cols-10 py-4 text-sm gap-4 items-center border-b border-b-[#5857576e] rounded-md shadow-md;
+    background: linear-gradient(#24060621, #0000004d);
+  }
+  .table-layout img {
+    width: 25px;
+  }
+}
+
+
