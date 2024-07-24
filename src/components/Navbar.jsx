@@ -16,14 +16,14 @@ const Navbar = () => {
       case "eur": {
         setCurrency({
           name: "eur",
-          symbol: "$",
+          symbol: "€",
         });
         break;
       }
       case "inr": {
         setCurrency({
           name: "inr",
-          symbol: "$",
+          symbol: "₹",
         });
         break;
       }
